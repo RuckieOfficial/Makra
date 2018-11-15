@@ -9,10 +9,8 @@
     <Grid>
         <Label x:Name="Vysledek" Content="Makro-Cislo ze souboru" FontSize="50" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,307" Height="112" Width="792"/>
 
-        <Button Content="Cislo ze souboru" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro1"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="reset"/>
         <Rectangle HorizontalAlignment="Left" Height="6" Margin="0,65,0,0" VerticalAlignment="Top" Width="792" Fill="#FFA200FF"/>
-        <Button Content="Hrdinove" HorizontalAlignment="Left" Margin="0,348,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro2"/>
-        <Button Content="Násobení čísel" Visibility="Hidden" Name="nasob" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro3"/>
         <!-- Vybaveni -->
         <Label Content="Predmet" Name="predmet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,86,0,0"/>
         <Label Content="Cena" Name="cena" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,86,0,0"/>
