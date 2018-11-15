@@ -1,0 +1,2 @@
+double nasobek = 1.5;
+return nasobek;

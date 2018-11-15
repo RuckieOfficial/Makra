@@ -1,0 +1,1 @@
+VybaveniInGlobals.Predmet = "Diamant"; VybaveniInGlobals.Cena = 1000; AtributyInGlobals.Sila = 10; AtributyInGlobals.Zdravi = 100; AtributyInGlobals.Inteligence = 5;

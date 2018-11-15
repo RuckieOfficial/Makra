@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Makra", "Makra\Makra.csproj", "{DAF77CF2-295D-4395-A1D0-A5B2FF010C22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF77CF2-295D-4395-A1D0-A5B2FF010C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF77CF2-295D-4395-A1D0-A5B2FF010C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF77CF2-295D-4395-A1D0-A5B2FF010C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF77CF2-295D-4395-A1D0-A5B2FF010C22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A17958FA-7733-4B11-885D-A964C8BA454E}
+	EndGlobalSection
+EndGlobal

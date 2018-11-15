@@ -1,0 +1,38 @@
+﻿<Window x:Class="Makra.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Makra"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Vysledek" Content="Makro-Cislo ze souboru" FontSize="50" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,307" Height="112" Width="792"/>
+
+        <Button Content="Cislo ze souboru" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro1"/>
+        <Rectangle HorizontalAlignment="Left" Height="6" Margin="0,65,0,0" VerticalAlignment="Top" Width="792" Fill="#FFA200FF"/>
+        <Button Content="Hrdinove" HorizontalAlignment="Left" Margin="0,348,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro2"/>
+        <Button Content="Násobení čísel" Visibility="Hidden" Name="nasob" HorizontalAlignment="Left" Margin="0,310,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="makro3"/>
+        <!-- Vybaveni -->
+        <Label Content="Predmet" Name="predmet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,86,0,0"/>
+        <Label Content="Cena" Name="cena" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,86,0,0"/>
+        <!-- Atributy -->
+        <Label Content="Inteligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,117,0,0"/>
+        <Label Content="Atributa1" Name="intel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,117,0,0"/>
+
+        <Label Content="Síla" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,138,0,0"/>
+        <Label Content="Atributa2" Name="sila" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,138,0,0"/>
+
+        <Label Content="Zdraví" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,158,0,0"/>
+        <Label Content="Atributa2" Name="zdravi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,158,0,0"/>
+        <Rectangle Fill="#FFF1168E" HorizontalAlignment="Left" Height="3" Margin="51,114,0,0" VerticalAlignment="Top" Width="119"/>
+
+        <TextBox HorizontalAlignment="Left" Name="prvnitext" Height="78" Margin="360,86,0,0" TextWrapping="Wrap" Text="TextBox1" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Name="druhejtext" Height="78" Margin="505,86,0,0" TextWrapping="Wrap" Text="TextBox2" VerticalAlignment="Top" Width="120"/>
+
+        <Button Content="Edit!" HorizontalAlignment="Left" Margin="360,163,0,0" VerticalAlignment="Top" Width="120" Height="21" Click="makro2a"/>
+        <Button Content="Edit!" HorizontalAlignment="Left" Margin="505,163,0,0" VerticalAlignment="Top" Width="120" Height="21" Click="makro3a"/>
+        <TextBox HorizontalAlignment="Left" x:Name="tretitext" Height="78" Margin="650,86,0,0" TextWrapping="Wrap" Text="TextBox3" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Edit!" HorizontalAlignment="Left" Margin="650,163,0,0" VerticalAlignment="Top" Width="120" Height="21" Click="makro1a"/>
+    </Grid>
+</Window>
