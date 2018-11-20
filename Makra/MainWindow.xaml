@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="Vysledek" Content="Makro-Cislo ze souboru" FontSize="50" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,307" Height="112" Width="792"/>
 
-        <Button Content="Reset" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Width="782" Height="33" Click="reset"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="0,386,0,0" VerticalAlignment="Top" Width="792" Height="33" Click="reset"/>
         <Rectangle HorizontalAlignment="Left" Height="6" Margin="0,65,0,0" VerticalAlignment="Top" Width="792" Fill="#FFA200FF"/>
         <!-- Vybaveni -->
         <Label Content="Predmet" Name="predmet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,86,0,0"/>
@@ -32,5 +32,10 @@
         <Button Content="Edit!" HorizontalAlignment="Left" Margin="505,163,0,0" VerticalAlignment="Top" Width="120" Height="21" Click="makro3a"/>
         <TextBox HorizontalAlignment="Left" x:Name="tretitext" Height="78" Margin="650,86,0,0" TextWrapping="Wrap" Text="TextBox3" VerticalAlignment="Top" Width="120"/>
         <Button Content="Edit!" HorizontalAlignment="Left" Margin="650,163,0,0" VerticalAlignment="Top" Width="120" Height="21" Click="makro1a"/>
+
+        <Button Name="btnOpenScripts" Click="btnOpenScripts_Click" HorizontalAlignment="Left" Margin="0,319,0,0" VerticalAlignment="Top" Width="396" Height="67" Content="Open File"/>
+        <Button Name="btnRunScripts" Click="btnRunScripts_Click" HorizontalAlignment="Left" Margin="396,319,0,0" VerticalAlignment="Top" Width="396" Height="67" Content="Run Scripts"/>
+        <ListBox Name="lbScripts" HorizontalAlignment="Left" Margin="0,289,0,0" VerticalAlignment="Top" Width="396" Height="30"/>
+        <ListBox Name="lbScriptsReturnValues" HorizontalAlignment="Left" Margin="395,289,0,0" VerticalAlignment="Top" Width="397" Height="30"/>
     </Grid>
 </Window>

@@ -166,6 +166,8 @@
     </ApplicationDefinition>
     <Compile Include="Atributy.cs" />
     <Compile Include="Globals.cs" />
+    <Compile Include="ScriptApp.cs" />
+    <Compile Include="ScriptFile.cs" />
     <Compile Include="Vybaveni.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -208,13 +210,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="makro1.txt" />
+    <Resource Include="makro1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="makro2.txt" />
+    <Resource Include="makro2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="makro3.txt" />
+    <Resource Include="makro3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,7 @@ using System.IO;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.Win32;
 
 namespace Makra {
     /// <summary>
@@ -24,6 +25,9 @@ namespace Makra {
     public partial class MainWindow : Window {
         List<Vybaveni> vybaveni = new List<Vybaveni>();
         List<Atributy> atribut = new List<Atributy>();
+
+        ScriptApp ScriptApp = new ScriptApp();
+        private List<string> filenames = new List<string>();
 
         string file = File.ReadAllText("../../makro1.txt");
         string file2 = File.ReadAllText("../../makro2.txt");
@@ -44,6 +48,8 @@ namespace Makra {
             tretitext.Text = file;
             prvnitext.Text = file2;
             druhejtext.Text = file3;
+            lbScriptsReturnValues.Items.Clear();
+            lbScripts.Items.Clear();
         }
 
         async void makro1a(object sender, RoutedEventArgs e) {
@@ -91,6 +97,27 @@ namespace Makra {
             atribut[0].Zdravi = Convert.ToInt32(zdravi.Content);
 
             vybaveni[0].Cena = Convert.ToInt32(cena.Content);
+        }
+        private void btnRunScripts_Click(object sender, RoutedEventArgs e) {
+            List<string> returnValues = ScriptApp.RunAll();
+
+            foreach (var returnValue in returnValues) {
+                lbScriptsReturnValues.Items.Add(System.IO.Path.GetFileName(returnValue));
+            }
+        }
+        private void btnOpenScripts_Click(object sender, RoutedEventArgs e) {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Multiselect = true;
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            if (openFileDialog.ShowDialog() == true) {
+                foreach (string filename in openFileDialog.FileNames) {
+                    filenames.Add(System.IO.Path.GetFileName(filename));
+                    lbScripts.Items.Add(System.IO.Path.GetFileName(filename));
+                }
+            }
+
+            ScriptApp.AddScriptFiles(filenames);
         }
     }
 }
